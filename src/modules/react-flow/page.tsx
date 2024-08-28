@@ -1,10 +1,12 @@
 import { Background, Controls, Node, ReactFlow } from '@xyflow/react';
-import { RoleComponentProps } from '../components/role-component';
+
 import { Button } from '@mantine/core';
 import '@xyflow/react/dist/style.css';
-import useRoleNodes from '../hooks/use-role-nodes';
-import RoleNodeComponent from '../components/role-node-component';
+
 import React from 'react';
+import { RoleComponentProps } from '../reducer/components/role-component';
+import useRoleNodes from './hooks/use-role-nodes';
+import RoleNodeComponent from './components/role-node-component';
 
 export type RoleNode = Node & { data: RoleComponentProps };
 

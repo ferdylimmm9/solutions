@@ -1,9 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import RouteEnum from './enum';
 import PrivateRoutes from './private-routes';
-import ReducerPage from '../../modules/reducer';
-import ReactFlowPage from '../../modules/react-flow';
-import { RoleNodesProvider } from '../../hooks/use-role-nodes';
+import { RoleNodesProvider } from '../../modules/react-flow/hooks/use-role-nodes';
+import ReducerPage from '../../modules/reducer/page';
+import ReactFlowPage from '../../modules/react-flow/page';
 
 const router = createBrowserRouter([
   {

@@ -1,8 +1,9 @@
 import { Button, Container, Flex } from '@mantine/core';
-import useRoles, { RoleType } from '../hooks/use-roles';
-import RoleComponent from '../components/role-component';
+
 import { v4 } from 'uuid';
 import React from 'react';
+import useRoles, { RoleType } from '../../hooks/use-roles';
+import RoleComponent from './components/role-component';
 
 export default function ReducerPage() {
   const { roles, onAddRole, onDeleteRole, onEditRole } = useRoles();
