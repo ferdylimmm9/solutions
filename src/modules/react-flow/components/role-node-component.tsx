@@ -1,5 +1,5 @@
 import { Button, Card, Flex, Text, TextInput } from '@mantine/core';
-import { RoleType } from '../../../hooks/use-roles';
+import { RoleType } from '../../reducer/hooks/use-roles';
 import useRoleNodes from '../hooks/use-role-nodes';
 import { Handle, Position } from '@xyflow/react';
 

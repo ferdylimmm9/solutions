@@ -1,5 +1,5 @@
 import { Button, Card, Flex, Text, TextInput } from '@mantine/core';
-import { RoleType } from '../../../hooks/use-roles';
+import { RoleType } from '../hooks/use-roles';
 
 export type RoleComponentData = {
   role: RoleType;
