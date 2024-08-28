@@ -16,7 +16,7 @@ export default function ReactFlowPage() {
   const nodeTypes = React.useMemo(() => {
     return { roleNodeComponent: RoleNodeComponent };
   }, []);
-  console.log(edges);
+
   return (
     <div
       style={{
@@ -26,6 +26,7 @@ export default function ReactFlowPage() {
     >
       {nodes.length === 0 && (
         <Button
+          m={16}
           onClick={() => {
             onAddNode();
           }}

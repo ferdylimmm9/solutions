@@ -48,6 +48,7 @@ Primitive Data Types: No need to memoize.
 Non-Primitive Data Types: Should be memoized to prevent unnecessary re-renders.
 useMemo: Re-runs when dependencies' memory references change
 `;
+
 export default function UseMemoPage() {
   const [segment, setSegment] = React.useState<string>(
     UseMemoSectionEnum.explanation,

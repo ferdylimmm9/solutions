@@ -45,7 +45,7 @@ export default function ReducerPage() {
   );
 
   return (
-    <Container fluid>
+    <Container fluid p={16}>
       {roles.length === 0 && (
         <Button
           onClick={() => {

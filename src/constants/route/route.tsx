@@ -5,6 +5,7 @@ import { RoleNodesProvider } from '../../modules/react-flow/hooks/use-role-nodes
 import ReducerPage from '../../modules/reducer/page';
 import ReactFlowPage from '../../modules/react-flow/page';
 import UseMemoPage from '../../modules/react-flow/use-memo/page';
+import Homepage from '../../modules/home/page';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: RouteEnum.UseMemo,
     element: <UseMemoPage />,
+  },
+  {
+    path: RouteEnum.Home,
+    element: <Homepage />,
   },
   {
     element: <PrivateRoutes />,
