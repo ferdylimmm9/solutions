@@ -19,7 +19,7 @@ importers:
         version: 5.51.24(react@18.3.1)
       '@xyflow/react':
         specifier: ^12.1.1
-        version: 12.1.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 12.1.1(@types/react@18.3.3)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       axios:
         specifier: ^1.7.4
         version: 1.7.4
@@ -32,6 +32,9 @@ importers:
       react-router-dom:
         specifier: ^6.26.1
         version: 6.26.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      use-immer:
+        specifier: ^0.10.0
+        version: 0.10.0(immer@10.1.1)(react@18.3.1)
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
@@ -964,6 +967,9 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
+  immer@10.1.1:
+    resolution: {integrity: sha512-s2MPrmjovJcoMaHtx6K11Ra7oD05NT97w1IC5zpMkT6Atjr7H8LjaDd81iIxUYpMKSRRNMJE703M1Fhr/TctHw==}
+
   import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -1393,6 +1399,12 @@ packages:
     resolution: {integrity: sha512-GLMG0Jc/jiKov/3Ulid1wbv3r54K9HlMW29IWcDFPEqFkSO2nS0MuefWgMJpeHQ9YJeXDL3ZUF+P3jdXlZX/cQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
+
+  use-immer@0.10.0:
+    resolution: {integrity: sha512-/eVwNR4TG9Tm/dd+aHYLLaI0FLfYKlkTqKMkn78Ah/EYVzWd/zJIgpkdoFEKbhQJOGo8XN7/mWrTx0exp1c+Ug==}
+    peerDependencies:
+      immer: '>=8.0.0'
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0
 
   use-isomorphic-layout-effect@1.1.2:
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
@@ -2016,13 +2028,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@xyflow/react@12.1.1(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@xyflow/react@12.1.1(@types/react@18.3.3)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@xyflow/system': 0.0.39
       classcat: 5.0.5
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      zustand: 4.5.5(@types/react@18.3.3)(react@18.3.1)
+      zustand: 4.5.5(@types/react@18.3.3)(immer@10.1.1)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -2407,6 +2419,8 @@ snapshots:
 
   ignore@5.3.2: {}
 
+  immer@10.1.1: {}
+
   import-fresh@3.3.0:
     dependencies:
       parent-module: 1.0.1
@@ -2785,6 +2799,11 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  use-immer@0.10.0(immer@10.1.1)(react@18.3.1):
+    dependencies:
+      immer: 10.1.1
+      react: 18.3.1
+
   use-isomorphic-layout-effect@1.1.2(@types/react@18.3.3)(react@18.3.1):
     dependencies:
       react: 18.3.1
@@ -2835,9 +2854,10 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zustand@4.5.5(@types/react@18.3.3)(react@18.3.1):
+  zustand@4.5.5(@types/react@18.3.3)(immer@10.1.1)(react@18.3.1):
     dependencies:
       use-sync-external-store: 1.2.2(react@18.3.1)
     optionalDependencies:
       '@types/react': 18.3.3
+      immer: 10.1.1
       react: 18.3.1
